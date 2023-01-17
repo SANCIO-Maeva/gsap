@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Nunito, sans-serif;
+}
+.outside {
+  position: relative;
+  overflow: visible;
+}
+h2,
+p {
+  text-align: center;
+}
+#apple {
+  width: 50vw;
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}

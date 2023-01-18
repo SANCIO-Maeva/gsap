@@ -1,4 +1,4 @@
-gsap.to(".titleCrew", {
+/*gsap.to(".titleCrew", {
   motionPath: {
     path: "#motionPath path",
     align: "#motionPath path",
@@ -6,13 +6,46 @@ gsap.to(".titleCrew", {
     alignOrigin: [0.5, 0.5],
   },
   ease: "none",
-  /*scrollTrigger: {
+  scrollTrigger: {
     markers: true,
     trigger: ".titleCrew",
     start: "top 20%",
     end: "bottom 50%",
     scrub: 1,
-  },*/
+  },
+});*/
+
+gsap.to(".firstLine", {
+  y: 250,
+  scrollTrigger: {
+    markers: true,
+    trigger: ".line",
+    start: "top 0%",
+    end: "bottom 10%",
+    scrub: 0.5,
+  },
+});
+
+gsap.to(".middleLine", {
+  y: 250,
+  scrollTrigger: {
+    markers: true,
+    trigger: ".line",
+    start: "top 10%",
+    end: "bottom 20%",
+    scrub: 1,
+  },
+});
+
+gsap.to(".lastLine", {
+  y: 250,
+  scrollTrigger: {
+    markers: true,
+    trigger: ".line",
+    start: "top 20%",
+    end: "bottom 30%",
+    scrub: 1.5,
+  },
 });
 
 gsap.to(".element", {

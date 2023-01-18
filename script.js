@@ -22,11 +22,11 @@ gsap.to(".firstLine", {
   opacity: 0,
   y: 300,
   scrollTrigger: {
-    markers: true,
-    trigger: ".line",
+    //markers: true,
+    trigger: ".firstLine",
     start: "top 10%",
     end: "bottom 50%",
-    scrub: 0.5,
+    scrub: 3,
   },
 });
 
@@ -34,11 +34,11 @@ gsap.to(".middleLine", {
   opacity: 0,
   y: 200,
   scrollTrigger: {
-    markers: true,
-    trigger: ".line",
+    // markers: true,
+    trigger: ".middleLine",
     start: "top 10%",
     end: "bottom 50%",
-    scrub: 1.5,
+    scrub: 3,
   },
 });
 
@@ -46,11 +46,22 @@ gsap.to(".lastLine", {
   opacity: 0,
   y: 100,
   scrollTrigger: {
-    markers: true,
-    trigger: ".line",
+    //markers: true,
+    trigger: ".lastLine",
     start: "top 10%",
     end: "bottom 50%",
     scrub: 3,
+  },
+});
+
+gsap.to(".vibzMobile", {
+  x: 320,
+  scrollTrigger: {
+    //markers: true,
+    trigger: ".vibzMobile",
+    start: "top 50%",
+    end: "bottom 80%",
+    scrub: 1,
   },
 });
 
@@ -60,7 +71,7 @@ gsap.to(".element", {
   scrollTrigger: {
     //markers: true,
     trigger: ".element",
-    start: "top 80%",
+    start: "top 75%",
     end: "bottom 80%",
     scrub: 1,
   },
@@ -79,7 +90,21 @@ gsap.to("#iphone", {
   },
 });
 
-//Paralexe
+//Animation au scroll des boutons
+gsap.to(".download", {
+  opacity: 1,
+  scale: 1,
+  ease: "none",
+  scrollTrigger: {
+    //markers: true,
+    trigger: ".download",
+    start: "top 100%",
+    end: "bottom 100%",
+    scrub: 2,
+  },
+});
+
+//Parallaxe
 gsap.to("[data-speed]", {
   y: (i, el) =>
     (1 - parseFloat(el.getAttribute("data-speed"))) *

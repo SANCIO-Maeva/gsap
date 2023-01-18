@@ -1,5 +1,6 @@
 body {
   margin-top: 20%;
+  margin-bottom: 20px;
   overflow-x: hidden;
   font-family: Nunito, sans-serif;
   background-size: contain;
@@ -107,12 +108,18 @@ h2 {
 
 .platform {
   padding-top: 150px;
+  padding-bottom: 0px;
   margin: 20px;
+  margin-bottom: 0%;
+}
+
+.vibzMobile {
+  margin-right: 600px;
 }
 
 .element {
   display: flex;
-  padding-top: 150px;
+  padding-top: 200px;
   height: 22vw;
   width: 100%;
   scale: 0.5;
@@ -145,8 +152,10 @@ h2 {
 
 .download {
   display: flex;
-  height: 30vw;
+  height: 5vw;
   flex-wrap: wrap;
+  opacity: 0;
+  padding-bottom: 0%;
 }
 
 #ios {

@@ -9,7 +9,7 @@ gsap.to(".titleCrew", {
   },
   ease: "none",
   scrollTrigger: {
-    markers: true,
+    //markers: true,
     trigger: ".titleCrew",
     start: "top 10%",
     end: "bottom 70%",

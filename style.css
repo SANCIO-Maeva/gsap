@@ -3,7 +3,7 @@ body {
   overflow-x: hidden;
   font-family: Nunito, sans-serif;
   background-size: contain;
-  background-image: no-repeat;
+  background-image: url("vibz-assets/white_pink_split_background.png");
   background-repeat: no-repeat;
 }
 
@@ -19,6 +19,8 @@ h2 {
   margin-bottom: 5px;
   font-weight: 590;
 }
+
+/**Première Partie**/
 
 .crew {
   padding: 20px;
@@ -91,6 +93,8 @@ h2 {
   width: 100%;
   border-radius: 125px;
 }
+
+/**Deuxième Partie**/
 
 .platform {
   padding-top: 150px;

@@ -1,4 +1,5 @@
-/*gsap.to(".titleCrew", {
+//Animation suivant un chemin (titreCrew)
+gsap.to(".titleCrew", {
   motionPath: {
     path: "#motionPath path",
     align: "#motionPath path",
@@ -6,19 +7,20 @@
     alignOrigin: [0.5, 0.5],
   },
   ease: "none",
-  scrollTrigger: {
+  /*scrollTrigger: {
     markers: true,
     trigger: ".titleCrew",
-    start: "top 20%",
-    end: "bottom 50%",
-    scrub: 1,
-  },
-});*/
+    start: "top 10%",
+    end: "bottom 70%",
+    scrub: 2.1,
+  },*/
+});
 
+//Animation des lignes profils au scroll vers le haut
 gsap.to(".firstLine", {
   y: 250,
   scrollTrigger: {
-    markers: true,
+    //markers: true,
     trigger: ".line",
     start: "top 0%",
     end: "bottom 10%",
@@ -29,7 +31,7 @@ gsap.to(".firstLine", {
 gsap.to(".middleLine", {
   y: 250,
   scrollTrigger: {
-    markers: true,
+    // markers: true,
     trigger: ".line",
     start: "top 10%",
     end: "bottom 20%",
@@ -40,7 +42,7 @@ gsap.to(".middleLine", {
 gsap.to(".lastLine", {
   y: 250,
   scrollTrigger: {
-    markers: true,
+    //markers: true,
     trigger: ".line",
     start: "top 20%",
     end: "bottom 30%",
@@ -48,21 +50,19 @@ gsap.to(".lastLine", {
   },
 });
 
+//Animation scale au scroll de l'Iphone, l'Ipad & la video
 gsap.to(".element", {
   scale: 1,
   scrollTrigger: {
     //markers: true,
-    // l'élément déclencheur
-    // en général le même qui est animé à la 1ère ligne
     trigger: ".element",
-    // reste du code scroll trigger
-    // ..
     start: "top 80%",
     end: "bottom 80%",
     scrub: 1,
   },
 });
 
+//Rotation Iphone
 gsap.to("#iphone", {
   rotation: 18,
   x: 180,
@@ -75,6 +75,7 @@ gsap.to("#iphone", {
   },
 });
 
+//Paralexe
 gsap.to("[data-speed]", {
   y: (i, el) =>
     (1 - parseFloat(el.getAttribute("data-speed"))) *

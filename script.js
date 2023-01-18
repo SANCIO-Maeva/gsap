@@ -1,6 +1,6 @@
 //Animation suivant un chemin (titreCrew)
 gsap.to(".titleCrew", {
-  duration: 2,
+  opacity: 1,
   motionPath: {
     path: "#motionPath path",
     align: "#motionPath path",
@@ -9,44 +9,48 @@ gsap.to(".titleCrew", {
   },
   ease: "none",
   scrollTrigger: {
-    //markers: true,
+    //markers: false,
     trigger: ".titleCrew",
-    start: "top 10%",
+    start: "top -10%",
     end: "bottom 70%",
+    scrub: 1,
   },
 });
 
 //Animation des lignes profils au scroll vers le haut
 gsap.to(".firstLine", {
-  y: 250,
+  opacity: 0,
+  y: 300,
   scrollTrigger: {
-    //markers: true,
+    markers: true,
     trigger: ".line",
-    start: "top 0%",
-    end: "bottom 10%",
+    start: "top 10%",
+    end: "bottom 50%",
     scrub: 0.5,
   },
 });
 
 gsap.to(".middleLine", {
-  y: 250,
+  opacity: 0,
+  y: 200,
   scrollTrigger: {
-    // markers: true,
+    markers: true,
     trigger: ".line",
     start: "top 10%",
-    end: "bottom 20%",
-    scrub: 1,
+    end: "bottom 50%",
+    scrub: 1.5,
   },
 });
 
 gsap.to(".lastLine", {
-  y: 250,
+  opacity: 0,
+  y: 100,
   scrollTrigger: {
-    //markers: true,
+    markers: true,
     trigger: ".line",
-    start: "top 20%",
-    end: "bottom 30%",
-    scrub: 1.5,
+    start: "top 10%",
+    end: "bottom 50%",
+    scrub: 3,
   },
 });
 

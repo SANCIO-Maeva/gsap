@@ -20,6 +20,10 @@ h2 {
   font-weight: 590;
 }
 
+#motionPath {
+  visibility: hidden;
+}
+
 /**Première Partie**/
 
 .crew {

@@ -1,5 +1,6 @@
 //Animation suivant un chemin (titreCrew)
 gsap.to(".titleCrew", {
+  duration: 2,
   motionPath: {
     path: "#motionPath path",
     align: "#motionPath path",
@@ -7,13 +8,12 @@ gsap.to(".titleCrew", {
     alignOrigin: [0.5, 0.5],
   },
   ease: "none",
-  /*scrollTrigger: {
+  scrollTrigger: {
     markers: true,
     trigger: ".titleCrew",
     start: "top 10%",
     end: "bottom 70%",
-    scrub: 2.1,
-  },*/
+  },
 });
 
 //Animation des lignes profils au scroll vers le haut

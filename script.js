@@ -1,4 +1,4 @@
-//Animation suivant un chemin (titreCrew)
+//Path animation (titreCrew)
 gsap.to(".titleCrew", {
   opacity: 1,
   motionPath: {
@@ -17,7 +17,7 @@ gsap.to(".titleCrew", {
   },
 });
 
-//Animation des lignes profils au scroll vers le haut
+//Animation of profile line scroll to up
 gsap.to(".firstLine", {
   opacity: 0,
   y: 300,
@@ -54,11 +54,11 @@ gsap.to(".lastLine", {
   },
 });
 
-gsap.to("#name", {
+gsap.to(".name", {
   opacity: 1,
   scrollTrigger: {
-    markers: true,
-    trigger: "#name",
+    //markers: true,
+    trigger: ".name",
     start: "top 70%",
     end: "bottom 50%",
     scrub: 1,
@@ -76,7 +76,7 @@ gsap.to(".vibzMobile", {
   },
 });
 
-//Animation scale au scroll de l'Iphone, l'Ipad & la video
+//Animation scale with scroll of Iphone, Ipad and video
 gsap.to(".element", {
   scale: 1,
   scrollTrigger: {
@@ -101,7 +101,7 @@ gsap.to("#iphone", {
   },
 });
 
-//Animation au scroll des boutons
+//Animation button with scroll
 gsap.to(".download", {
   scale: 1.1,
   ease: "none",
@@ -114,7 +114,7 @@ gsap.to(".download", {
   },
 });
 
-//Parallaxe
+//Parallax
 gsap.to("[data-speed]", {
   y: (i, el) =>
     (1 - parseFloat(el.getAttribute("data-speed"))) *

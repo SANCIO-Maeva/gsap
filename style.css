@@ -26,7 +26,7 @@ h2 {
   visibility: hidden;
 }
 
-/**Première Partie**/
+/**First Part**/
 .titleCrew {
   opacity: 0;
 }
@@ -35,80 +35,55 @@ h2 {
   margin: 20px;
 }
 
-#name {
+/**Profile**/
+.name {
   opacity: 0;
 }
-.firstLine {
+
+.line {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
   max-width: 500px;
-  margin: auto;
-  margin-top: 10px;
-  border-radius: 125px;
-
-  opacity: 1;
 }
 
-.firstLine > div {
+.line > div {
   width: 25%;
   padding: 20px;
   padding-bottom: 5px;
 }
 
-.firstLine img {
+.line img {
   width: 100%;
   border-radius: 125px;
 }
 
-.middleLine {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.firstLine {
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 125px;
+}
 
-  max-width: 500px;
+.middleLine {
   margin: auto;
   margin-top: 5px;
   border-radius: 125px;
 }
 
 .middleLine > div {
-  width: 25%;
-  padding: 20px;
   padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.middleLine img {
-  width: 100%;
-  border-radius: 125px;
 }
 
 .lastLine {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  max-width: 500px;
   margin: auto;
   border-radius: 125px;
 }
 
 .lastLine > div {
-  width: 25%;
-  padding: 20px;
   padding-top: 5px;
-  padding-bottom: 5px;
 }
 
-.lastLine img {
-  width: 100%;
-  border-radius: 125px;
-}
-
-/**Deuxième Partie**/
-
+/**Second Part**/
 .container {
   padding-top: 150px;
   padding-bottom: 0px;
@@ -153,6 +128,7 @@ h2 {
   object-fit: contain;
 }
 
+/**Section download**/
 .download {
   display: flex;
   height: 5vw;
@@ -161,15 +137,16 @@ h2 {
   scale: 0.5;
 }
 
-#ios {
-  padding-left: 30px;
-  padding-right: 35px;
+.btn {
   width: 200px;
   height: 59px;
 }
 
+#ios {
+  padding-left: 30px;
+  padding-right: 35px;
+}
+
 #android {
   padding-left: 35px;
-  width: 200px;
-  height: 59px;
 }

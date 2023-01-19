@@ -35,6 +35,9 @@ h2 {
   margin: 20px;
 }
 
+#name {
+  opacity: 0;
+}
 .firstLine {
   display: flex;
   justify-content: center;
@@ -154,8 +157,8 @@ h2 {
   display: flex;
   height: 5vw;
   flex-wrap: wrap;
-  opacity: 0;
   padding-bottom: 0%;
+  scale: 0.5;
 }
 
 #ios {

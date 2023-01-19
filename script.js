@@ -54,6 +54,17 @@ gsap.to(".lastLine", {
   },
 });
 
+gsap.to("#name", {
+  opacity: 1,
+  scrollTrigger: {
+    markers: true,
+    trigger: "#name",
+    start: "top 70%",
+    end: "bottom 50%",
+    scrub: 1,
+  },
+});
+
 gsap.to(".vibzMobile", {
   x: 320,
   scrollTrigger: {
@@ -92,8 +103,7 @@ gsap.to("#iphone", {
 
 //Animation au scroll des boutons
 gsap.to(".download", {
-  opacity: 1,
-  scale: 1,
+  scale: 1.1,
   ease: "none",
   scrollTrigger: {
     //markers: true,

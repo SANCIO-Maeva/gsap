@@ -150,3 +150,24 @@ h2 {
 #android {
   padding-left: 35px;
 }
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  background-color: #000;
+  padding-bottom: 35px;
+  margin-top: 225px;
+}
+.title {
+  font-weight: 500;
+  line-height: 29px;
+  font-size: 24px;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  margin-top: 16px;
+  align-items: center;
+}
